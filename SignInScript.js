@@ -27,7 +27,7 @@ document.getElementById('sign-in-form').addEventListener('submit', function(even
 const router = document.getElementById('up');
 
 router.addEventListener('click', function() {
-    window.location.href = 'sign-up.html';
+    window.location.href = 'Sign-up.html';
 });
 
 
