@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    background-color: rgb(80, 79, 79);
+
+}
+
+.image-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fdf4f4;
+    color: rgb(80, 79, 79);
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(80, 79, 79);
+    color: #fdf4f4;
+
+}
+
+.image {
+    padding-top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+/* Container */
+.login-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fdf4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form */
+.login-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fdf4f4;
+}
+
+label {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(80, 79, 79);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #fdf4f4;
+    border: 1px solid #8b8b8b;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 12px;
+    font-size: 16px;
+    background-color: rgb(80, 79, 79);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.signIn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: rgb(80, 79, 79);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer {
+    background-color: #fdf4f4;
+    color: rgb(80, 79, 79);
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer nav a {
+    color: rgb(80, 79, 79);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container {
+    background-color: #fdf4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 800px;
+    max-width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #8b8b8b;
+}
+
+Header {
+    width: 100%;
+    height: 70px;
+    background-color: #fdf4f4;
+}
+
+.currentTime {
+    font-size: larger;
+}
+
+.timeText {
+    text-align: right;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fdf4f4;
+    color: #8b8b8b;
+    font-weight: bold;
+
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+}
+
+.note {
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #fdf4f4;
+    color: #8b8b8b;
+}
+
+.add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 120px;
+    cursor: pointer;
+}
+
+
+.outer-container {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #fdf4f4;
+}
+
+.buttons-container {
+    display: flex;
+    margin: 5px;
+}
+
+button {
+    margin: 2px;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #fdf4f4;
+    position: fixed;
+    overflow: auto;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 16px;
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 150px;
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-y: visible;
+    }
+}
+
+.modal {
+    display: inline-block; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #fdf4f4;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  

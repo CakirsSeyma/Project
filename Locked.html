@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCKED NOTES 🔓</title>
+    <link rel="stylesheet" href="Styles.css">
+      <!-- FAVICON -->
+      <link rel="icon" type="image/png" href="images\letter-n.png">
+</head>
+<body>
+
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h class="title" style="padding: 10px; padding-bottom: 20px;"> Locked Notes 💎 </h>
+          <br><br><br>
+          <form id="passwordForm">
+            <label for="password">Enter a password for continue to see Locked Notes ❗ <br><br> Password:</label>
+            <br>
+            <input type="password" id="password" name="password" style="width: calc(100% - 40px);">
+            <br><br>
+            <button class="button" type="submit" id="continueButton" >Continue 🔏</button>
+          </form>
+        </div>
+      </div>
+  
+    
+</body>
+
+<script>
+  
+  document.getElementById('continueButton').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    const storedUser = JSON.parse(localStorage.getItem('currentUser'));
+
+    const enteredPassword = document.getElementById('password').value;
+
+    if (enteredPassword === storedUser.password) {
+     
+      window.location.href = 'LockedNotes.html'; 
+    } else {
+      alert('Invalid credentials! Please try again❗');
+    }
+  });
+
+</script>
+
+</html>
