@@ -7,7 +7,7 @@ image.addEventListener('click', function() {
 });
 
 
-document.getElementById('sign-in-form').addEventListener('submit', function(event) {
+document.getElementById('signInForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const storedUser = JSON.parse(localStorage.getItem('currentUser'));

@@ -6,13 +6,18 @@ image.addEventListener('click', function() {
     location.reload();
 });
 
+document.getElementById('goToSignIn').addEventListener('click', function(){
+    window.location.href = 'Sign-in.html'; 
+} );
+
 //* Sign up ile bilgileri localStorage'a kaydediyorum
 
 const signUpButton = document.getElementById('signUpButton');
 
 //* Sign-Up formunun submit olayını dinleme işlemini gerçekleştiriyorum.
-document.getElementById('sign-up-form').addEventListener('submit', function(event) {
+document.getElementById('signUpForm').addEventListener('submit', function(event) {
     event.preventDefault();
+
 
     //! DOM ile girilen değerleri alıyorum
 
@@ -40,5 +45,7 @@ document.getElementById('sign-up-form').addEventListener('submit', function(even
     localStorage.setItem('currentUser', JSON.stringify(user));
 
     alert('Sign-up successful 💫');
+
+    
 });
 

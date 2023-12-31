@@ -4,7 +4,7 @@ body {
 
 }
 
-.image-container {
+.imageContainer {
     text-align: center;
     padding: 20px;
     background-color: #fdf4f4;
@@ -28,7 +28,7 @@ body {
 }
 
 /* Container */
-.login-container {
+.loginContainer {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -41,14 +41,14 @@ body {
 }
 
 /* Form */
-.login-container form {
+.loginContainer form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.input-group {
+.inputGroup {
     width: 100%;
     margin-bottom: 20px;
     background-color: #fdf4f4;
@@ -103,7 +103,7 @@ button:hover {
     padding: 5px 0;
 }
 
-.footer-content {
+.footerContent {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -171,7 +171,7 @@ Header {
     color: #8b8b8b;
 }
 
-.add-note {
+.addNote {
     height: 200px;
     border: none;
     outline: none;
@@ -181,7 +181,7 @@ Header {
 }
 
 
-.outer-container {
+.outerContainer {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -189,7 +189,7 @@ Header {
     background-color: #fdf4f4;
 }
 
-.buttons-container {
+.buttonsContainer {
     display: flex;
     margin: 5px;
 }
@@ -268,7 +268,7 @@ div.content {
     overflow: auto;
   }
   
-  .modal-content {
+  .modalContent {
     background-color: #fdf4f4;
     margin: 15% auto; 
     padding: 20px;
